@@ -86,7 +86,7 @@ CFLAGS+=-Os -DANDROID -DAPPNAME=\"$(APPNAME)\"
 ifeq (ANDROID_FULLSCREEN,y)
 CFLAGS +=-DANDROID_FULLSCREEN
 endif
-CFLAGS+= -I$(CAPPANDROID)/capp -I$(NDK)/sysroot/usr/include -I$(NDK)/toolchains/llvm/prebuilt/$(OS_NAME)/sysroot/usr/include -fPIC -I$(CAPPANDROID) -DANDROIDVERSION=$(ANDROIDVERSION)
+CFLAGS+= -I$(CAPPANDROID)/cdrawkit -I$(NDK)/sysroot/usr/include -I$(NDK)/toolchains/llvm/prebuilt/$(OS_NAME)/sysroot/usr/include -fPIC -I$(CAPPANDROID) -DANDROIDVERSION=$(ANDROIDVERSION)
 LDFLAGS += -lm -lGLESv3 -lEGL -landroid -llog
 LDFLAGS += -shared -uANativeActivity_onCreate
 
